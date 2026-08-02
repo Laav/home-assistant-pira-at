@@ -52,3 +52,7 @@ De repository volgt de standaard HACS-layout: precies één directory onder `cus
 De repository is voorbereid voor een eerste GitHub Release (bijvoorbeeld `v0.1.0`); HACS kan die release dan als installeerbare versie tonen.
 
 De integratie heeft geen directe AirPlay-implementatie. Dat is bewust: AirPlay is afhankelijk van de Home Assistant-integratie die jouw ontvangende hardware aanbiedt. Waar die hardware als `media_player` beschikbaar is en directe audio-URL's accepteert, kan PIRA.AT er via Home Assistant naartoe afspelen. De actie `play_random` geeft net als Ether Roulette voorrang aan stations met minstens één luisteraar.
+
+## Licentie
+
+Deze integratie wordt gepubliceerd onder de MIT-licentie. Zie [LICENSE](LICENSE).

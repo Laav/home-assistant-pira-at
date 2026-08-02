@@ -1,0 +1,37 @@
+play_station:
+  name: Speel station af
+  description: Speel een specifiek, actueel PIRA.AT-station af op een bestaande mediaspeler.
+  fields:
+    entity_id:
+      name: Mediaspeler
+      description: De Chromecast, Apple TV, AirPlay-bridge of andere Home Assistant-mediaspeler waarop de stream moet starten.
+      required: true
+      selector:
+        entity:
+          filter:
+            - domain: media_player
+    station_id:
+      name: Station-ID
+      description: De stabiele API-sleutel in de vorm bron:id, bijvoorbeeld gzc:9016. Kies voor handmatig gebruik liever een station in de Media Browser.
+      required: true
+      selector:
+        text:
+play_random:
+  name: Speel willekeurig station af
+  description: Kies een willekeurig, op dat moment speelbaar PIRA.AT-station en start dit op een bestaande mediaspeler.
+  fields:
+    entity_id:
+      name: Mediaspeler
+      description: De Chromecast, Apple TV, AirPlay-bridge of andere Home Assistant-mediaspeler waarop de stream moet starten.
+      required: true
+      selector:
+        entity:
+          filter:
+            - domain: media_player
+    region:
+      name: Regio
+      description: Optioneel. Beperk de willekeurige keuze tot een regio, bijvoorbeeld Twente.
+      required: false
+      selector:
+        text:
+

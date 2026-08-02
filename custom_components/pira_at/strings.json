@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "PIRA.AT toevoegen",
+        "description": "Home Assistant controleert of de publieke PIRA.AT-stationscatalogus bereikbaar is. Er zijn geen inloggegevens nodig."
+      }
+    },
+    "error": {
+      "cannot_connect": "De publieke PIRA.AT API is momenteel niet bereikbaar."
+    },
+    "abort": {
+      "unique_id_configured": "PIRA.AT is al toegevoegd."
+    }
+  }
+}

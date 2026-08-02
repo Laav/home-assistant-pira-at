@@ -1,0 +1,16 @@
+{
+  "domain": "pira_at",
+  "name": "PIRA.AT",
+  "codeowners": [
+    "@Laav"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/Laav/home-assistant-pira-at",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Laav/home-assistant-pira-at/issues",
+  "homeassistant": "2025.1.0",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}

@@ -15,10 +15,8 @@ Dit is bewust een **custom integration**, geen Home Assistant add-on. De integra
 
 ## Installatie via HACS
 
-Zodra deze map in een publieke GitHub-repository staat:
-
 1. Open in HACS `Integrations` en kies in het menu `Custom repositories`.
-2. Voeg de GitHub-URL toe met categorie **Integration**.
+2. Voeg [`https://github.com/Laav/home-assistant-pira-at`](https://github.com/Laav/home-assistant-pira-at) toe met categorie **Integration**.
 3. Installeer **PIRA.AT** en herstart Home Assistant.
 4. Ga naar `Instellingen` → `Apparaten & diensten` → `Integratie toevoegen` → **PIRA.AT**.
 5. Open daarna de Media Browser, kies **PIRA.AT**, selecteer een station en kies de gewenste mediaspeler.
@@ -49,7 +47,7 @@ Station-ID's zijn alleen stabiel binnen de actuele catalogus. Voor een dashboard
 
 De repository volgt de standaard HACS-layout: precies één directory onder `custom_components/`. De GitHub Action valideert die structuur bij een push of pull request.
 
-De repository is voorbereid voor een eerste GitHub Release (bijvoorbeeld `v0.1.0`); HACS kan die release dan als installeerbare versie tonen.
+De actuele installeerbare release is [v0.1.1](https://github.com/Laav/home-assistant-pira-at/releases/tag/v0.1.1). HACS toont deze release na installatie als beschikbare versie.
 
 De integratie heeft geen directe AirPlay-implementatie. Dat is bewust: AirPlay is afhankelijk van de Home Assistant-integratie die jouw ontvangende hardware aanbiedt. Waar die hardware als `media_player` beschikbaar is en directe audio-URL's accepteert, kan PIRA.AT er via Home Assistant naartoe afspelen. De actie `play_random` geeft net als Ether Roulette voorrang aan stations met minstens één luisteraar.
 
